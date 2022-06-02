@@ -17,5 +17,9 @@ public class RepositoryController {
         return ResponseEntity.status(200).body(listaRepo);
     }
 
-    
+    @PostMapping("/repo")
+    public ResponseEntity<RepositoryDTO> creat(@RequestBody RepositoryDTO repo){
+        return ResponseEntity.status(201).body(repo);
+    }
+
 }

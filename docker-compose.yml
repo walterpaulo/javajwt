@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  postgresql:
+    container_name: postgresql
+    image: postgres
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: d9bc25472e2c909e0f
+      POSTGRES_DB: userapi
+    ports:
+      - "5432:5432"

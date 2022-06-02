@@ -12,8 +12,10 @@ import java.util.ArrayList;
 public class RepositoryController {
 
     @GetMapping("/repo")
-    public ResponseEntity<Iterable<Repository>> index(@RequestBody RepositoryDTO rep){
+    public ResponseEntity<Iterable<Repository>> index(){
         Iterable<Repository> listaRepo = new ArrayList<>();
         return ResponseEntity.status(200).body(listaRepo);
     }
+
+    
 }

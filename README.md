@@ -14,3 +14,11 @@ docker-compose up -d
 ```
 docker-compose dostroy
 ```
+
+### Access Data
+```
+psql -h localhost -d userapi -U dev
+```
+password: d9bc25472e2c909e0f
+
+***psql package present in postgresql-client-12 or postgresql-client-common***
